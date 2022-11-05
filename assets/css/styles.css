@@ -1,0 +1,31 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 60px;
+
+    /*========== Colors ==========*/
+    --secundary-color: #F4B41A;
+
+    /*========== Font and typography ==========*/
+    --body-fonts: 'Poppins', sans-serif;
+    --title-fonts: 'Oswald', sans-serif;
+
+     /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
