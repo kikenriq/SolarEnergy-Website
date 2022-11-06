@@ -76,6 +76,7 @@ button{
 
 /*=============== NAV ===============*/
 .nav{
+    position: relative;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -92,12 +93,11 @@ button{
     align-items: center;
     line-height: 15px;
     gap: 3px;
-    left: 120px;
 }
 
 .nav__toggle{
-    top: 10px;
-    font-size: 20px;
+    margin-right: ;
+    font-size: 23px;
     cursor: pointer;
 }
 
@@ -174,7 +174,6 @@ button{
     font-weight: 500;
     line-height: 43px;
     color: white;
-    text-transform: uppercase;
     align-items: center;
     top: 15rem;
     left: 20px;
