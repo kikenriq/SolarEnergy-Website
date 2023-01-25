@@ -262,3 +262,9 @@ button{
 
 /*=============== FEAT ===============*/
 
+.box-features{
+    width: 400px;
+    height: auto;
+    background-color: #10404D;
+    margin-top: 3rem;
+}
