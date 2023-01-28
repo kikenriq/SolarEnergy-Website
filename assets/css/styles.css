@@ -556,4 +556,44 @@ button{
     font-size: var(--smaller-font-size);
     z-index: 10;
   }
-  
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (min-width: 767px){
+    .nav__toggle,
+    .nav__close{
+        display: none;
+  }
+
+  .nav__list{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .home{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .home__img{
+    height: 100%;
+  }
+
+  .hero__text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  /*=============== About ===============*/
+
+  .about-container{
+    flex-direction: row;
+    align-items: center;
+    padding: 8rem 5rem 5rem 5rem;
+  }
+
+  .about-img img{
+    width: 100rem;
+  }
+}
