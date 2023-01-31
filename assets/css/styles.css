@@ -161,6 +161,21 @@ button{
     cursor: pointer;
 }
 
+.active-link{
+  position: relative;
+  color: var(--first-color);
+}
+
+.active-link::after{
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #10404D;
+}
+
 /*===============HERO===============*/
 .home{
     position: relative;
@@ -271,23 +286,23 @@ button{
 
 /*=============== FEAT ===============*/
 .fetures{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1rem 0 1rem;
+    max-width: 1050px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 5.5rem 0 1rem;
 }
+.box_container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 .bg-features{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #10404D;
     border-radius: 1rem;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem 2rem;
 }
 .features-text{
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.5rem;
     color: #E7ECED;
     text-align: center;
 }
@@ -465,9 +480,10 @@ button{
   /*=============== CONTACT ===============*/
 
   .contact__container{
-    margin-top: 4rem;
-    display: grid;
-    row-gap: 3.5rem;
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 5.5rem 0 1rem;
   }
   
   .contact__data{
@@ -564,24 +580,17 @@ button{
 /*=============== BREAKPOINTS ===============*/
 
 @media screen and (min-width: 767px){
-    .header{
-        display: flex;
-        height: 70px;
-        align-items: center;
-    }
     .nav__toggle,
     .nav__close{
         display: none;
   }
 
-  .nav{
-    display: flex;
+.nav {
     flex-direction: row;
-    gap: 20rem;
- }
+    column-gap: 5rem;
+}
 
  .nav__list{
-    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
@@ -596,7 +605,7 @@ button{
 
   .home__img{
     height: 100vh;
-    padding-left: 15rem;
+    padding-left: 5rem;
     order: 2;
   }
 
@@ -609,7 +618,7 @@ button{
   }
 
   .hero__text h1{
-    font-size: 100px;
+    font-size: 95px;
   }
 /*=============== Logos ===============*/
 .logos{
@@ -644,26 +653,20 @@ button{
 
 /*=============== FEAT ===============*/
 .fetures{
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 8rem;
 }
-  .features-text{
-    padding: 0 3rem 0 3rem;
-}
-
-.features-text h1{
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 30px;
+.box_container{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .bg-features {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 8rem 10rem 8rem 10rem;
+    padding: 3.5rem 2.5rem;
 }
 
-/*=============== GALLErY ===============*/
+/*=============== GALLERY ===============*/
 .gallery{
     display: flex;
     flex-direction: row-reverse;
@@ -680,6 +683,7 @@ button{
     width: 800px;
     height: 500px;
 }
+
 /*=============== FAQ ===============*/
 
 .questions{
@@ -688,6 +692,21 @@ button{
     align-items: center;
     margin: 0 auto;
     gap: 5rem;
+}
+/*=============== CONTACTS ===============*/
+.contact-container{
+  width: 100vh;
+}
+.contact__container{
+  width: 100vh;
+  display: flex;
+  gap: 5rem;
+}
+.contact__box{
+width: 100vh;
+}
+.contact__inputs{
+  width: 100vh;
 }
 
 
