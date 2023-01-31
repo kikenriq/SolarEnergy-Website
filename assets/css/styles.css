@@ -492,9 +492,8 @@ button{
   }
 
   .contact-container{
-    max-width: 968px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+   display: grid;
+   row-gap: 3.5rem;
 }
   
   .contact__subtitle{
@@ -695,18 +694,8 @@ button{
 }
 /*=============== CONTACTS ===============*/
 .contact-container{
-  width: 100vh;
-}
-.contact__container{
-  width: 100vh;
-  display: flex;
-  gap: 5rem;
-}
-.contact__box{
-width: 100vh;
-}
-.contact__inputs{
-  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
