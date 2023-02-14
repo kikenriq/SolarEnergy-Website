@@ -110,7 +110,6 @@ button{
     cursor: pointer;
 }
 
-
 .nav__menu{
     position: relative;
 }
@@ -200,13 +199,22 @@ button{
     margin-right: 1rem;
 }
 
-.hero__text h1{
+.title_hero h1{
     font-family: var(--title-fonts);
-    font-size: 65px;
+    font-size: 90px;
     font-weight: 700;
     color: #1e1e1e;
     line-height: 90%;
 }
+
+.title_hero{
+  font-family: var(--title-fonts);
+  font-size: 50px;
+  font-weight: 700;
+  color: #1e1e1e;
+  line-height: 90%;
+}
+
 
 .hero__text p{
     font-size: 14px;
@@ -227,6 +235,29 @@ button{
     column-gap: 0.5rem;
 }
 
+.text_number {
+  font-family: var(--title-fonts);
+  text-align: right;
+  font-size: 50px;
+  line-height: 15px;
+}
+
+.numbers_section span {
+  font-size: 15px;
+}
+
+.line{
+  width: 1px;
+  height: 3rem;
+  background-color: #10404D;
+}
+
+.numbers_section{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 15rem;
+}
 
 /*===============LOGOs===============*/
 .logos{
@@ -480,7 +511,7 @@ button{
   /*=============== CONTACT ===============*/
 
   .contact__container{
-    max-width: 968px;
+    max-width: 1300px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding: 5.5rem 0 1rem;
@@ -616,9 +647,11 @@ button{
     order: 1;
   }
 
-  .hero__text h1{
-    font-size: 95px;
+  .title_hero{
+    font-size: 90px;
   }
+
+
 /*=============== Logos ===============*/
 .logos{
     width: 100vh;
@@ -693,9 +726,17 @@ button{
     gap: 5rem;
 }
 /*=============== CONTACTS ===============*/
-.contact-container{
-  margin-left: auto;
-  margin-right: auto;
+.contact__container{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 
