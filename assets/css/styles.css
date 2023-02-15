@@ -803,7 +803,7 @@ button{
   width: 600px;
 }
 
-/*=============== CONTACTS ===============*/
+/*=============== FOOTER ===============*/
 .footer{
   padding-top: 3rem;
   background-color: #E7ECED;
@@ -816,6 +816,7 @@ button{
 }
 .footer__container{
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
   margin-left: 1.5rem;
