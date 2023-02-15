@@ -142,6 +142,12 @@ button{
     color: black;
     font-weight: 700;
     text-transform: uppercase;
+    transition: ease-in-out;
+    animation-duration: 150ms;
+}
+
+.nav__link:hover{
+  color: #10404D;
 }
 
 .btn{
@@ -238,7 +244,7 @@ button{
 .text_number {
   font-family: var(--title-fonts);
   text-align: right;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 15px;
 }
 
@@ -254,10 +260,9 @@ button{
 
 .numbers_section{
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 15rem;
 }
 
 /*===============LOGOs===============*/
@@ -510,23 +515,23 @@ button{
   }
 
   /*=============== CONTACT ===============*/
-.contact-container{
-  width: 100%;
-}
+
   .contact__container{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-    max-width: 1300px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding: 5.5rem 0 1rem;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 8rem;
   }
+
   .contact__box{
+    max-width: 980px;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
+
   .section__title{
     font-family: var(--title-fonts);
     font-size: 40px;
@@ -534,17 +539,17 @@ button{
   }
 
   .contact__form{
-    background-color: #E7ECED;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
+    background-color: #E7ECED;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 980px;
   }
 
-  .button__flex{
+  .button-flex{
     width: 100%;
-    border-radius: 5px;
   }
   
   .contact__data{
@@ -552,6 +557,10 @@ button{
     row-gap: 2rem;
   }
 
+  .contact-container{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
   
   .contact__subtitle{
     font-size: var(--normal-font-size);
@@ -632,29 +641,31 @@ button{
     font-size: var(--smaller-font-size);
     z-index: 10;
   }
-
 /*=============== FOOTER ===============*/
 .footer{
-  margin-top: 5rem;
-  background-color: #E7ECED;
-}
-
-.footer__container{
-  font-family: var(--body-fonts);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   padding-top: 5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .footer__logo{
-  font-size: 20px;
-  display: inline;
-  align-content: center;
-  font-family: var(--title-fonts);
+  display: flex;
+  font-size: 25px;
   color: #10404D;
+  align-items: center;
+}
+
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  background-color: #E7ECED;
+}
+
+.footer__copy{
+  text-align: center;
+  background-color: #E7ECED;
 }
 /*=============== BREAKPOINTS ===============*/
 
@@ -775,17 +786,45 @@ button{
     gap: 5rem;
 }
 /*=============== CONTACTS ===============*/
+.contact-container{
+  margin-bottom: 5rem;
+}
 .contact__container{
-  justify-content: space-between;
   align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .contact__form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 600px;
+}
+
+/*=============== CONTACTS ===============*/
+.footer{
+  padding-top: 3rem;
+  background-color: #E7ECED;
+}
+
+.footer__logo{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer__container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.footer__copy{
+  text-align: center;
+  margin-top: 2rem;
 }
 
 
