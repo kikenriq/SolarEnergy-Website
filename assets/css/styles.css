@@ -336,7 +336,7 @@ button{
 .bg-features{
     background-color: #10404D;
     border-radius: 1rem;
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 1rem 2rem;
 }
 .features-text{
     font-size: 1.5rem;
@@ -347,7 +347,7 @@ button{
 .box-features{
     display: grid;
     padding: 2rem 2rem;
-    width: 300px;
+    width: 310px;
     height: 300px;
     background-color: #FFF;
     margin-top: 3rem;
@@ -405,7 +405,7 @@ button{
 
 .gallery-container{
     display: flex;
-    width: 400px;
+    width: 350px;
     height: 300px;
 }
 
@@ -772,7 +772,7 @@ button{
 }
 
 .gallery-container {
-    width: 800px;
+    width: 350px;
     height: 500px;
 }
 

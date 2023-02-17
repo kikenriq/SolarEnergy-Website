@@ -1,0 +1,85 @@
+:root {
+    --header-height: 50px;
+
+    /*========== Colors ==========*/
+    --secundary-color: #F4B41A;
+
+    /*========== Font and typography ==========*/
+    --body-fonts: 'Poppins', sans-serif;
+    --title-fonts: 'Oswald', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+     /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #10404D;
+  }
+
+h1{
+    font-size: 25px;
+    align-items: center;
+    font-family: var(--body-fonts);
+}
+
+.form-container{
+    background-color: whitesmoke;
+    height: 300px;
+    width: 300px;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.form-input-material{
+    margin-top: 1rem;
+}
+
+.form-control-material{
+    width: 12rem;
+    border-radius: 0.5rem;
+    height: 1.8rem;
+    border-color: gray;
+}
+
+label{
+    font-family: var(--body-fonts);
+    font-size: 12px;
+}
+
+button{
+    margin-top: 1rem;
+    width: 150px;
+    background-color: #10404D;
+    color: aliceblue;
+    border: none;
+    padding:1rem 1rem 1rem 1rem;
+    height: 50px;
+    font-weight: 600;
+    font-family: var(--body-fonts);
+}
